@@ -1,6 +1,5 @@
 {
     "name": "yepsua/theme-bundle",
-    "version": "1.1.0",
     "description": "This Bundle contains a pretty theme layout for Admin Applications. It Was Designed to be used with YepsuaSmarTwigBundle and YepsuaGeneratorBundle.",
     "keywords": ["symfony2","smartwig","theme","yepsua","jqueryui"],
     "homepage": "http://www.yepsua.com",
