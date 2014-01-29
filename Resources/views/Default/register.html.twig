@@ -1,0 +1,28 @@
+{% extends "YepsuaThemeBundle::auth_layout.html.twig" %}
+
+{% block layout_panel_title %}
+<div class="panel-heading"><span class="glyphicon glyphicon-plus"></span> New User</div>
+{% endblock %}
+
+
+{% block layout_form %}
+<div class="col-md-12">
+
+    <div class="input-group">
+        <label for="txtUser" class="input-group-addon"><span class="glyphicon glyphicon-user"></span></label>
+        <input id="txtUser" type="text" class="form-control" placeholder="User">
+    </div>
+    <br/>
+    <div class="input-group">
+        <label for="txtPassword" class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></label>
+        <input id="txtEmail" type="text" class="form-control" placeholder="Email">
+    </div>
+    <br/>
+    <div style="float:right">
+        <button  type="button" class="btn btn-default">
+            <span class="glyphicon glyphicon-log-in"></span>
+            Sign-in
+        </button>
+    </div>
+</div>
+{% endblock layout_form %}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block layout_title '' %}</title>
+            
+            {% block layout_include  %}
+                {% include 'YepsuaSmarTwigBundle::smartwigAssets.html.twig' %}
+                {% include 'YepsuaSmarTwigBundle::bootstrapAssets.html.twig' %}
+            {% endblock %}
+        
+            {% block stylesheets %}
+                <link href="{{ asset('bundles/yepsuatheme/css/layout.css') }}" rel="stylesheet">
+            {% endblock %}
+
+    </head>    
+    <body class="main-content">
+    {% block javascripts '' %}
+    {% block layout_ajax_status %}
+        {% ajax_status onstart="$.blockUI()"
+              onsuccess="$.unblockUI()"
+              oncomplete="$.unblockUI()"
+              onerror="$.unblockUI()"
+              for="document" %}
+    {% endblock %}       
+        <div class="full-height">
+        <div id="mainMenu">
+            {% block layout_main_menu %}
+            <ul>
+                <li><span>Option1</span></li>
+                <li><a href="#"></i> Option 2</a>
+                    <ul>
+                        <li><a href="#">Option 2.1</a></li>
+                        <li><a href="#">Option 2.3</a></li>
+                        <li><a href="#">Option 2.3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><i class="glyphicon glyphicon-align-justify"></i> Option 3</a>
+                    <ul>
+                        <li><a href="#">Option 3.1</a></li>
+                        <li>
+                            <a href="#"><i class="glyphicon glyphicon-bell"></i> Option with Icon</a>        
+                        </li>
+                        <li><a href="#">Option 3.3</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#"></i> Option 4</a>
+                    <ul>
+                        <li><a href="#">Option 4.1</a></li>
+                        <li><a href="#">Option 4.2</a>
+                            <ul>
+                                <li><a href="#">Option 4.2.1</a></li>
+                                <li><a href="#">Option 4.2.2</a></li>
+                                <li><a href="#">Option 4.2.3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Option 4.3</a></li>
+                    </ul>
+                </li>
+                <li style="float:right"><a href="#"></i> Option5</a>
+                    <ul>
+                        <li><a href="#">Option 5.1</a></li>
+                        <li><a href="#">Option 5.2</a>
+                        <li><a href="#">Option 5.3</a></li>
+                    </ul>
+                </li>
+            </ul>
+            {% endblock %}
+        </div>
+        {% ui_menu builtIn="#mainMenu > ul" %}{% end_ui_menu %}                 
+        <table class="breadcrumb breadcrumb-table">
+            <tr>
+                <td>
+                 <ol class="breadcrumb breadcrumb-table breadcrumb-list">
+                     {% block layout_breadcrumb %}
+                     <li><a href="#"><b>Home</b></a></li>
+                     {% endblock %}
+                 </ol>    
+               </td>
+               <td align="right">
+                   {% block layout_after_breadcrumb '' %}
+               </td>
+            </tr>
+       </table>
+       <table class="full-height full-width">
+            <tbody>
+                <tr>
+                       <td class="left-content breadcrumb-table">
+                            {% block layout_left_content '' %}
+                       </td>
+                       <td class="main-content">
+                           {% block layout_content '' %}
+                       </td>
+                </tr>   
+            </tbody>
+            <tfoot class="navbar-fixed-bottom hidden-phone hidden-xs">
+                <tr>
+                    <td align="center">
+                        {% block layout_footer_content %}
+                        <a target="_blank" href="http://www.yepsua.com" alt="Yepsua">Yepsua Soluciones Tecnológicas</a>
+                        {% endblock %}
+                    </td>
+                </tr>   
+            </tfoot>
+        </table> 
+    </div>        
+    </body>
+</html>

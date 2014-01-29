@@ -1,0 +1,52 @@
+.breadcrumb-table{
+    width: 100%;margin: 0px;padding: 0px
+}
+
+.breadcrumb-list{
+    height: 30px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.no-margin{
+    margin: 0px;
+}
+
+.left-content{
+    padding-top: 5px;
+    border-top: 1px solid #AFAFB6;
+    border-right: 1px solid #AFAFB6;
+    vertical-align: top; 
+    width:250px;
+    background-color: #F5F5F5;
+}
+
+.left-content > hr {
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.main-content{
+    background-color: #D3DEE5;
+    vertical-align: top;
+    border-top: 1px solid #AFAFB6;
+}
+
+html{
+    height:100%;
+}
+
+body{
+    height: 100%; 
+    margin: 0; 
+    overflow-y: scroll; 
+    padding: 0;
+}
+
+.full-height{
+    height: 100%;
+}
+
+.full-width{
+    width:100%;
+}

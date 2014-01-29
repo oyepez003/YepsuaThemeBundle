@@ -1,0 +1,20 @@
+{% extends "YepsuaThemeBundle::main_layout.html.twig" %}
+
+{% block layout_title "Theme example" %}
+
+{% block layout_breadcrumb %}
+  <li><a href="#"><b>Foo</b></a></li>
+  <li><a href="#"><b>Bar</b></a></li>
+{% endblock layout_breadcrumb %}
+        
+{% block layout_after_breadcrumb %}
+  <b>Welcome: Yepsua Theme Layout</b>
+{% endblock layout_after_breadcrumb %}
+
+{% block layout_left_content %}
+  The Left content
+{% endblock layout_left_content %}
+
+{% block layout_content %}
+    Your content here!
+{% endblock layout_content %}

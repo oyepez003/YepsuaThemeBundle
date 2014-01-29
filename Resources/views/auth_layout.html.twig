@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block layout_title '' %}</title>
+            
+            {% block layout_include  %}
+                {% include 'YepsuaSmarTwigBundle::smartwigAssets.html.twig' %}
+                {% include 'YepsuaSmarTwigBundle::bootstrapAssets.html.twig' %}
+            {% endblock %}
+        
+            {% block stylesheets %}
+                <link href="{{ asset('bundles/yepsuatheme/css/layout.css') }}" rel="stylesheet">
+                
+                <style type="text/css">
+                    .panelAuth{
+                        margin-top: 10%; 
+                        width: 350px;
+                    }
+                </style>
+                
+            {% endblock %}
+                
+    </head>    
+    <body class="main-content">
+        <div align="center">
+            <div class="panel panel-default panelAuth" align="left">
+                {% block layout_panel_title %}
+                <div class="panel-heading"><span class="glyphicon glyphicon-book"></span> Panel Title</div>
+                {% endblock %}
+                
+                <div class="panel-body">
+                    <div class="row">
+                            
+                        {% block layout_form  '' %}     
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
