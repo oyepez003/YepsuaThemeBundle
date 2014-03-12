@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="messages.en.xlf">
+        <body>
+            <trans-unit id="msg.please.wait">
+                <source>msg.please.wait</source>
+                <target>Por favor espere ...</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

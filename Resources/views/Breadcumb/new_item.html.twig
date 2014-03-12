@@ -1,0 +1,4 @@
+{% set _trans_domain = trans_domain is defined ? trans_domain : 'MenuLabels' %}
+{% for item in items %}
+<li><a href="{{item.action}}"><b>{{ item.label|trans([], _trans_domain) }}</b></a></li>
+{% endfor %}

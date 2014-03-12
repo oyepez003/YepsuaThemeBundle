@@ -16,7 +16,7 @@
     <body class="main-content">
     {% block javascripts '' %}
     {% block layout_ajax_status %}
-        {% ajax_status onstart="$.blockUI()"
+        {% ajax_status onstart="$.blockUI({'message':'"~ 'msg.please.wait'|trans ~ "'})"
               onsuccess="$.unblockUI()"
               oncomplete="$.unblockUI()"
               onerror="$.unblockUI()"
