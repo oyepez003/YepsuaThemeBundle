@@ -50,3 +50,37 @@ body{
 .full-width{
     width:100%;
 }
+
+.ui-message{
+    background-color: gray; 
+    padding: 5px; 
+    margin: 2px 0px 5px;
+    background-color: #EDEDED;
+    background-image: -ms-linear-gradient(top, #FCFCFC 0%, #DEDEDE 100%);
+    background-image: -moz-linear-gradient(top, #FCFCFC 0%, #DEDEDE 100%);
+    background-image: -o-linear-gradient(top, #FCFCFC 0%, #DEDEDE 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FCFCFC), color-stop(1, #DEDEDE));
+    background-image: -webkit-linear-gradient(top, #FCFCFC 0%, #DEDEDE 100%);
+    background-image: linear-gradient(to bottom, #FCFCFC 0%, #DEDEDE 100%);
+    border-bottom: 1px solid #CACACA;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4), 0 0 9px rgba(0, 0, 0, 0.1);
+}
+
+.ui-message-title{
+    color:#4C4C4C;
+    font-weight:bold; 
+    font-size: 18px;
+    text-shadow: 0 1px 1px #FFFFFF;
+}
+
+.ui-error-text{
+    color: #CD0A0A;
+}
+
+.ui-success-text{
+    color: #008000;
+}
+
+.ui-info-text{
+    color: #00008B;
+}

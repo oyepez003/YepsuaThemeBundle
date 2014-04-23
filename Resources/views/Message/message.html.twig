@@ -1,0 +1,15 @@
+{% block before_message '' %}
+{% set message_class = '' %}
+<div class="ui-message">
+    {% block before_title '' %}
+    <div>
+        <span class="ui-message-title">
+            <div class="{% block message_class '' %}">
+                {% block icon '' %}
+                {% block message '' %}
+            </div>
+        </span>
+    </div>
+    {% block after_title '' %}
+</div>
+{% block after_message '' %}
