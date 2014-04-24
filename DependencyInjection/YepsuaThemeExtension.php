@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the YepsuaSmarTwigBundle.
+ * This file is part of the YepsuaThemeBundle.
  *
  * (c) Omar Yepez <omar.yepez@yepsua.com>
  *
