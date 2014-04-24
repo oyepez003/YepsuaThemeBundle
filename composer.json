@@ -12,10 +12,10 @@
         }
     ],
     "require": {
-        "yepsua/smartwig-bundle":"1.1.0"
+        "yepsua/smartwig-bundle": "1.2.x-dev",
     },
 	"suggest": {
-        "yepsua/generator-bundle": "1.1.0",
+		"yepsua/generator-bundle": "1.1.0",
 		"yepsua/menu-bundle": "1.0.0"
     },
     "autoload": {
